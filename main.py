@@ -203,15 +203,15 @@ def main():
         command = input("Enter command for operation:\n-->")
         if command == "add":
             register_user()
-        if command == "list":
+        elif command == "list":
             display_user()
-        if command == "deposit":
+        elif command == "deposit":
             find_and_deposit()
-        if command == "withdraw":
+        elif command == "withdraw":
             find_and_withdraw()
-        if command == "transfer":
+        elif command == "transfer":
             transfer()
-        if command == "balance":
+        elif command == "balance":
             show_balance()
         else:
             print("Command does not match any possible operation")
